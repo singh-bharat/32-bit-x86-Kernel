@@ -23,7 +23,7 @@ _start:
         mov $stack_top, %esp
         call kernel_main
         cli
-l:      hlt
+lb:      hlt
         jmp lb
 
 .size _start, . - _start
